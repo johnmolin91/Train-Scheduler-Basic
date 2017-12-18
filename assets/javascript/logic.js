@@ -56,4 +56,7 @@
 
     var minutesAway = moment(trainFirst, "hh:mm").fromNow();
     console.log(minutesAway);
+
+    $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" +
+  trainFirst + "</td><td>" + trainFreq + "</td><td>" + minutesAway + "</td></tr>");
   })
